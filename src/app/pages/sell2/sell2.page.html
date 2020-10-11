@@ -1,0 +1,67 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark" [routerLink]="['/sell1']">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="hed">
+      <h3>Selling an item</h3>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/add']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="img">
+    <ion-col>
+      <div>
+        <ion-img src="../../../assets/camera.jpg"></ion-img>
+      </div>
+    </ion-col>
+    <ion-col class="upload">
+      <!--      <ion-col>-->
+      <ion-button expand="block" size="small" class="new-background-color" [routerLink]="['/category']">
+        <ion-icon slot="icon-only" name="arrow-up-circle-outline" class="loc-i"></ion-icon>
+        UPLOAD
+      </ion-button>
+      <!--      </ion-col>-->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item class="contact">
+        <ion-checkbox color="primary" slot="start"></ion-checkbox>
+        <ion-label>Used</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item class="contact">
+        <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+        <ion-label>New</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <form id="form">
+    <app-input placeholder="Brand"></app-input>
+    <app-input placeholder="Model"></app-input>
+    <app-input placeholder="Description"></app-input>
+    <app-input placeholder="Price"></app-input>
+    <ion-item class="contact">
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Include contact details</ion-label>
+    </ion-item>
+    <ion-item class="contact">
+      <ion-checkbox color="primary" slot="start"></ion-checkbox>
+      <ion-label>Negotiable</ion-label>
+    </ion-item>
+    <div class="sell-btn">
+    <ion-button class="new-background-color" expand="block" shape="round" [routerLink]="['/afterhome']">Post Ad</ion-button>
+    </div>
+  </form>
+
+</ion-content>

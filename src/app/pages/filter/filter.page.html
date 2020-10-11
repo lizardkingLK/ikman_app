@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title class="text-color">Filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+ <h2 class="f-h2">Filter Options</h2>
+    </ion-col>
+  <ion-col size="2">
+    <ion-button color="primary" fill="clear" [routerLink]="['/afterhome']">
+      <ion-icon slot="icon-only" name="checkmark-outline" class="f-btn"></ion-icon>
+    </ion-button>
+  </ion-col>
+  </ion-row>
+  <p class="f-p">Changes made to get the best ads for<br> your preference</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Sort by</ion-card-subtitle>
+<!--      <ion-card-title>Sort by</ion-card-title>-->
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Date:</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="nes">Newest First</ion-select-option>
+          <ion-select-option value="n64">Lowest To Highest</ion-select-option>
+          <ion-select-option value="ps">Highest To Lowest</ion-select-option>
+          <ion-select-option value="genesis">Oldest First</ion-select-option>
+          <ion-select-option value="saturn">Newest First</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Type:</ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="nes">All Posters</ion-select-option>
+          <ion-select-option value="n64">Only Members</ion-select-option>
+          <ion-select-option value="ps">Authorized Dealers</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+<!--    <ion-card-header>-->
+<!--      <ion-card-subtitle></ion-card-subtitle>-->
+<!--      &lt;!&ndash;      <ion-card-title>Sort by</ion-card-title>&ndash;&gt;-->
+<!--    </ion-card-header>-->
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="7">
+          <ion-label>
+            <h2 class="nimz" >URGENT</h2>
+          </ion-label>
+        </ion-col>
+        <ion-col size="2">
+          <!--            <ion-button color="light" fill="clear">-->
+          <ion-toggle ></ion-toggle>
+          <!--            </ion-button>-->
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Doorstep Delivery</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Buy Directly from <b>ikman</b> without leaving your home</p>
+      <br>
+      <ion-toggle></ion-toggle>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

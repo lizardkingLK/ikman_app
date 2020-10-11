@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title class="text-color">Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <h2 class="f-h2">Select Location</h2>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary" fill="clear" [routerLink]="['/afterhome']">
+        <ion-icon slot="icon-only" name="checkmark-outline" class="f-btn"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <p class="f-p">Select a location for your preference</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Select your current location</ion-card-subtitle>
+<!--      <ion-card-title>Select your current location</ion-card-title>&ndash;&gt;-->
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" size="small" class="new-background-color">
+        <ion-icon slot="icon-only" name="location-outline" class="loc-i"></ion-icon>MY LOCATION</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Select your preferred location</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+      <ion-list>
+        <ion-item>Kandy</ion-item>
+        <ion-item>Colombo</ion-item>
+        <ion-item>Galle</ion-item>
+        <ion-item>Anuradhapura</ion-item>
+        <ion-item>Batticalo</ion-item>
+        <ion-item>Hambantota</ion-item>
+        <ion-item>Nuwara Eliya</ion-item>
+        <ion-item>Kurunegala</ion-item>
+        <ion-item>Polonnaruwa</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

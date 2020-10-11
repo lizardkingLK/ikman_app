@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" class="cross" [routerLink]="['/add']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <h3>Look for Items to buy</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Hi</h1>
+    <p>To continue choose your category and<br> the location</p>
+  </div>
+
+  <ion-button class="new-background-color" expand="block" shape="round"><ion-icon name="location-outline" class="b-loc"></ion-icon>My Location</ion-button>
+
+  <div class="separator">
+    <span>or</span>
+    <span class="line left"></span>
+    <span class="line right"></span>
+  </div>
+  <div class="b-loc-2">
+  <ion-item lines="none">
+    <ion-icon name="location-outline" slot="start"></ion-icon>
+    <ion-label>
+      <ion-input placeholder="Sri Lanka"></ion-input>
+    </ion-label>
+    <ion-icon name="chevron-down-outline"></ion-icon>
+  </ion-item>
+  </div>
+  <div class="b-loc-3">
+    <ion-item lines="none">
+      <ion-icon name="apps-outline" slot="start"></ion-icon>
+      <ion-label>
+        <ion-input placeholder="Category"></ion-input>
+      </ion-label>
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-item>
+  </div>
+  <ion-button shape="round" fill="clear" color="dark" size="small" class="btn-1" [routerLink]="['/buy2']">Next<ion-icon name="arrow-forward-outline" class="n-icon"></ion-icon></ion-button>
+
+</ion-content>

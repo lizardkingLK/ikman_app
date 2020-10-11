@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark" [routerLink]="['/signup']" >
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="hed">
+      <h1>Create your Account</h1>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/home']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--  <h1>Create your<br />Account</h1>-->
+  <ion-row class="img">
+    <ion-col>
+      <div>
+        <ion-img src="../../../assets/user.jpg"></ion-img>
+      </div>
+    </ion-col>
+    <ion-col class="upload">
+<!--      <ion-col>-->
+        <ion-button expand="block" size="small" class="new-background-color" [routerLink]="['/category']">
+          <ion-icon slot="icon-only" name="arrow-up-circle-outline" class="loc-i"></ion-icon>
+          UPLOAD
+        </ion-button>
+<!--      </ion-col>-->
+    </ion-col>
+  </ion-row>
+
+  <form id="form">
+    <app-input placeholder="Your Name"></app-input>
+    <app-input placeholder="Phone"></app-input>
+    <app-input placeholder="Email"></app-input>
+    <div class="gender">
+    <ion-item lines="none" >
+      <ion-label>Gender:</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="nes">Female</ion-select-option>
+        <ion-select-option value="n64">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+    </div>
+    <div class="birth">
+    <ion-item lines="none" >
+      <ion-icon name="calendar-outline" slot="start"></ion-icon>
+      <ion-label>
+        <ion-datetime placeholder="23-07-1997" display-format="DD-MM-YYYY"></ion-datetime>
+      </ion-label>
+    </ion-item>
+    </div>
+    <div class="pass">
+    <app-input type="password" placeholder="Password"></app-input>
+    </div>
+    <ion-button class="new-background-color" expand="block" shape="round" [routerLink]="['/profile']">Join Us</ion-button>
+  </form>
+
+  <p>By pressing 'Join Us' you agree to <br />our terms & conditions.</p>
+</ion-content>

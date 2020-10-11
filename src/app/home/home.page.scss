@@ -1,27 +1,143 @@
-#container {
+.new-background-color{
+  --background: linear-gradient(90deg, rgba(43,90,148,1) 0%, rgba(45,112,229,1) 35%, rgba(45,112,229,1) 100%);
+}
+
+.text-color{
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
 }
 
-#container strong {
+ion-toggle {
+  zoom: 0.6;
+}
+.search-bar{
+  --border-radius: 5px;
+}
+
+.button-row-1{
+  padding-left: 8px;
+  padding-right: 10px;
+}
+
+.loc-i{
+  padding-right: 10px;
+}
+
+.head-des{
+  text-align: center;
+  font-weight: 500;
+  color:#808289;
+}
+
+.btn-1{
+  font-weight: bold;
+  padding-left: 77px;
+}
+.btn-2{
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 40px;
+}
+
+.hr-1 {
+  border-top: 1px solid grey;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.col-1{
+  padding-left: 19px;
+}
+
+.img-1{
+  height: 20px;
+}
+
+.hr-2 {
+  border-top: 3px solid grey;
+}
+
+ion-content {
+  --background: #f8f8fa;
+}
+
+
+
+
+.title-1 {
   font-size: 20px;
-  line-height: 26px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.title {
+  font-size: 19px;
 }
 
-#container p {
+
+.card {
+  margin: 0 50px 0 0;
+  width: 80%;
+  height: 40%;
+  box-shadow: none;
+  border-radius: 14px;
+}
+
+ion-card-content {
+  .img-wrapper {
+    border-radius: 14px;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+.h-card-i{
+  color: #3880ff;
+}
+  ion-icon {
+    color: #f2994a;
+    //padding-right: 4px;
+  }
+
+  ion-card-subtitle:last-of-type {
+    padding-top:6px;
+  }
+
+}
+
+ion-card-header {
+  ion-icon {
+    font-size: 60px;
+  }
+
+  ion-card-title {
+    font-size: 22px;
+    font-weight: bolder;
+  }
+}
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+ion-badge {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.scrollVertically{
+  overflow: auto;
+  height: 50vh;
+}
+
+.h-btn{
+  //padding-left: 90px;
+}
+
+.sub{
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }

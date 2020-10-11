@@ -1,0 +1,21 @@
+.new-background-color{
+  --background: linear-gradient(90deg, rgba(43,90,148,1) 0%, rgba(45,112,229,1) 35%, rgba(45,112,229,1) 100%);
+}
+
+.text-color{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+ion-col {
+  background-color: #f7f7f7;
+  border: solid 1px #ddd;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+ion-row{
+  padding-top: 10px;
+}

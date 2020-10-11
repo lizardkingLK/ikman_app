@@ -1,0 +1,218 @@
+<ion-header class="ion-no-border">
+
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="../../../assets/pro.jpg">
+    </ion-avatar>
+    <ion-label>
+      <p>Hello,</p>
+      <h3>Nimaya Ganhewa</h3>
+    </ion-label>
+
+  </ion-item>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="slides ion-margin-bottom">
+    <ion-row class="p-r-1">
+      <ion-button shape="round" fill="clear" color="dark" size="default" class="btn-1" [routerLink]="['/settings']">
+        <ion-icon name="settings-outline"></ion-icon>Settings</ion-button>
+      <div class="vl"></div>
+      <ion-button shape="round" fill="clear" color="dark" size="default" class="btn-2" [routerLink]="['/chat']">
+        <ion-icon name="chatbubbles-outline"></ion-icon>Chat</ion-button>
+    </ion-row>
+    <hr class="hr-1"/>
+  </div>
+
+  <div class="container">
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Favourites</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear" [routerLink]="['/favourites']">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>My Ads</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Stay Safe</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="help-circle-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>FAQ</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear" [routerLink]="['/faq']">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="card-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>How to sell fast</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>More</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="3">
+            <ion-button color="light" fill="clear">
+              <ion-icon name="power-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="7">
+            <ion-label>
+              <h4>Logout</h4>
+            </ion-label>
+          </ion-col>
+          <ion-col size="2">
+            <ion-button color="light" fill="clear" [routerLink]="['/home']">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="['/afterhome']">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="search" [routerLink]="['/search']">
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-label>Search</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="add" [routerLink]="['/add']">
+          <ion-icon name="add-circle-outline" size="large"></ion-icon>
+          <!--        <ion-label>Add</ion-label>-->
+        </ion-tab-button>
+        <ion-tab-button tab="chat" [routerLink]="['/chat']">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          <ion-label>Chat</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="profile" [routerLink]="['/profile']">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+
+</ion-footer>

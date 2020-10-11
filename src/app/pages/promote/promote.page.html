@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark" [routerLink]="['/product']" >
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="hed">
+      <h1>Promote an Ad</h1>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/afterhome']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1></h1>
+  </div>
+
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col>
+            <ion-card-title class="title">Boom Box Portable</ion-card-title>
+            <ion-row class="prices">
+              <ion-col>
+                <ion-card-subtitle><p>Rs.7500 | </p></ion-card-subtitle>
+              </ion-col>
+              <ion-col class="discount">
+
+                <ion-card-subtitle><p class="dis"> 25% OFF</p></ion-card-subtitle>
+              </ion-col>
+            </ion-row>
+
+            <ion-card-subtitle><p class="money"> Rs.10000</p></ion-card-subtitle>
+          </ion-col>
+          <ion-col size="2" class="heart">
+            <ion-button color="primary" fill="clear" class="h-btn">
+              <ion-icon slot="icon-only" name="heart" class="p-card-i-1"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+  <form id="form">
+    <ion-item>
+      <ion-label>Priority:</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="nes">High</ion-select-option>
+        <ion-select-option value="n64">Medium</ion-select-option>
+        <ion-select-option value="ps">Low</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <div class="input">
+    <app-input type="Description" placeholder="Description"></app-input>
+    </div>
+    <ion-button class="new-background-color" expand="block" shape="round" [routerLink]="['/afterhome']">Post</ion-button>
+  </form>
+
+</ion-content>

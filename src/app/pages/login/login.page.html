@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark" [routerLink]="['/signin']" >
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="hed">
+      <h1>Sign in</h1>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/home']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1></h1>
+  </div>
+  <div class="img-wrapper">
+    <ion-img src="../../../assets/logo.png"></ion-img>
+  </div>
+  <form id="form">
+    <app-input placeholder="Email"></app-input>
+    <app-input type="password" placeholder="Password"></app-input>
+    <ion-button class="new-background-color" expand="block" shape="round" [routerLink]="['/profile']">Login</ion-button>
+  </form>
+
+  <ion-row>
+  <ion-button shape="round" fill="clear" color="dark" size="small" class="btn-1" [routerLink]="['/settings']">Forgot your password?</ion-button>
+  </ion-row>
+  <ion-row class="l-r-1">
+  <ion-button shape="round" fill="clear" color="dark" size="small" class="btn-2" [routerLink]="['/signup']">Create an account <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+  </ion-row>
+</ion-content>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+    constructor(private router: Router) {}
 
-  constructor() {}
+    options = {
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: -60,
+    };
 
+    btnClicked(){
+        console.log('btn clicked');
+        //this.router.navigate(['signin']);
+    }
 }

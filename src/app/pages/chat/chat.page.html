@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title class="text-color">Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar class="search-bar" placeholder="Search" searchIcon="search-outline"
+                 inputmode="search"></ion-searchbar>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="3">
+          <ion-button  color="primary" fill="clear" class="h-btn">
+            <ion-icon slot="icon-only" name="person-circle-outline" size="large"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="7" >
+          <ion-card-title class="title">Lakmina</ion-card-title>
+          <ion-card-subtitle class="sub">No, since we have already given a discount</ion-card-subtitle>
+            </ion-col>
+        <ion-col size="2">
+          <ion-button color="primary" fill="clear" [routerLink]="['/chat2']" class="h-btn">
+            <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="3">
+          <ion-button color="primary" fill="clear" class="h-btn">
+            <!--            <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>-->
+            <ion-icon slot="icon-only" name="person-circle-outline" size="large"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="7" >
+          <ion-card-title class="title">Sandeep</ion-card-title>
+          <ion-card-subtitle class="sub">No, this house does not have a pool</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button color="primary" fill="clear"  class="h-btn">
+            <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="3">
+          <ion-button color="primary" fill="clear" class="h-btn">
+            <!--            <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>-->
+            <ion-icon slot="icon-only" name="person-circle-outline" size="large"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="7" >
+          <ion-card-title class="title">Supuni</ion-card-title>
+          <ion-card-subtitle class="sub">Yes, it is brand new with a fair price</ion-card-subtitle>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button color="primary" fill="clear"  class="h-btn">
+            <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="['/afterhome']">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="search" [routerLink]="['/search']">
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-label>Search</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="add" [routerLink]="['/add']">
+          <ion-icon name="add-circle-outline" size="large"></ion-icon>
+          <!--        <ion-label>Add</ion-label>-->
+        </ion-tab-button>
+        <ion-tab-button tab="chat" [routerLink]="['/chat']">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          <ion-label>Chat</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="profile" [routerLink]="['/profile']">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+
+</ion-footer>

@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark" [routerLink]="['/buy1']">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <div class="hed">
+      <h3>Look for Items to buy</h3>
+    </div>
+    <ion-buttons slot="end">
+      <ion-button color="dark" [routerLink]="['/add']">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1></h1>
+  </div>
+  <div class="img-wrapper">
+    <ion-img src="../../../assets/logo.png"></ion-img>
+  </div>
+  <form id="form">
+    <app-input placeholder="Title"></app-input>
+    <app-input placeholder="Description"></app-input>
+    <ion-item class="contact">
+    <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      <ion-label>Include contact details</ion-label>
+    </ion-item>
+    <ion-button class="new-background-color" expand="block" shape="round" [routerLink]="['/afterhome']">Post Ad</ion-button>
+  </form>
+
+</ion-content>

@@ -1,0 +1,200 @@
+<ion-header [translucent]="true" xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar class="new-background-color">
+    <ion-title class="text-color">
+      ikman
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="false">
+
+  <ion-row class="ion-align-items-center">
+    <ion-col size="10">
+      <ion-searchbar class="search-bar" placeholder="Search" searchIcon="search-outline"
+                     inputmode="search"></ion-searchbar>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary" fill="clear" [routerLink]="['/filter']">
+        <ion-icon slot="icon-only" name="options-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="button-row-1">
+    <ion-col>
+      <ion-button expand="block" size="small" class="new-background-color" [routerLink]="['/location']">
+        <ion-icon slot="icon-only" name="location-outline" class="loc-i"></ion-icon>
+        LOCATION
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" size="small" class="new-background-color" [routerLink]="['/category']">
+        <ion-icon slot="icon-only" name="apps-outline" class="loc-i"></ion-icon>
+        CATEGORIES
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <h4 class="head-des">Find a great deal<br>close to you</h4>
+  <ion-row>
+    <ion-button shape="round" fill="clear" color="dark" size="default" class="btn-1" [routerLink]="['/favourites']"><ion-icon slot="icon-only" name="heart" class="heart"></ion-icon>Favourites</ion-button>
+    <div class="vl"></div>
+    <ion-button shape="round" fill="clear" color="dark" size="default" class="btn-2">My Ads</ion-button>
+  </ion-row>
+  <hr class="hr-1"/>
+  <ion-row>
+    <ion-col class="col-1">
+      <img src="../../assets/dd.jpg" class="img-1">
+    </ion-col>
+    <ion-col size="2">
+      <ion-toggle></ion-toggle>
+    </ion-col>
+  </ion-row>
+  <!--  <hr class="hr-2"/>-->
+
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-align-items-baseline">
+      <ion-col size="6">
+        <h4 class="title-1">
+          View Deals
+        </h4>
+      </ion-col>
+      <ion-col>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--slides-->
+  <div class="scrollVertically">
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12">
+          <ion-slides [options]="options">
+            <ion-slide>
+              <ion-card class="card">
+                <ion-card-content class="ion-text-left">
+
+                  <div class="img-wrapper">
+                    <ion-img src="../../assets/boom.jpg"></ion-img>
+                  </div>
+                  <ion-row>
+                    <ion-col >
+                      <ion-card-title class="title">Boom Box Portable</ion-card-title>
+                      <ion-card-subtitle class="sub">Rs.7500 | 25% OFF</ion-card-subtitle>
+                      <ion-card-subtitle >Member <ion-icon name="star"></ion-icon></ion-card-subtitle>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-button color="primary" fill="clear" [routerLink]="['/product']" class="h-btn">
+                        <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card class="card">
+                <ion-card-content class="ion-text-left">
+
+                  <div class="img-wrapper">
+                    <ion-img src="../../assets/house.jpg"></ion-img>
+                  </div>
+                  <ion-row>
+                    <ion-col >
+                      <ion-card-title class="title">House For Sale</ion-card-title>
+                      <ion-card-subtitle class="sub">Rs.6,800,000 | Kandy </ion-card-subtitle>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-button color="primary" fill="clear" [routerLink]="['/product']" class="h-btn">
+                        <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card class="card">
+                <ion-card-content class="ion-text-left">
+
+                  <div class="img-wrapper">
+                    <ion-img src="../../assets/dog.jpg"></ion-img>
+                  </div>
+                  <ion-row>
+                    <ion-col >
+                      <ion-card-title class="title">Labrador</ion-card-title>
+                      <ion-card-subtitle class="sub">Rs.15,000 | Adoption</ion-card-subtitle>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-button color="primary" fill="clear" [routerLink]="['/product']" class="h-btn">
+                        <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+
+            <ion-slide>
+              <ion-card class="card">
+                <ion-card-content class="ion-text-left">
+
+                  <div class="img-wrapper">
+                    <ion-img src="../../assets/phone.jpg"></ion-img>
+                  </div>
+                  <ion-row>
+                    <ion-col >
+                      <ion-card-title class="title">iPhone &</ion-card-title>
+                      <ion-card-subtitle class="sub">Rs.60,000 | 15% OFF</ion-card-subtitle>
+                      <ion-card-subtitle >Member <ion-icon name="star"></ion-icon></ion-card-subtitle>
+                    </ion-col>
+                    <ion-col size="2">
+                      <ion-button color="primary" fill="clear" [routerLink]="['/product']" class="h-btn">
+                        <ion-icon slot="icon-only" name="chevron-forward-outline" class="h-card-i"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!--slides  -->
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" [routerLink]="['/afterhome']">
+          <ion-icon name="home-outline"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="search" [routerLink]="['/search']">
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-label>Search</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="add" [routerLink]="['/add']">
+          <ion-icon name="add-circle-outline" size="large"></ion-icon>
+          <!--        <ion-label>Add</ion-label>-->
+        </ion-tab-button>
+        <ion-tab-button tab="chat" [routerLink]="['/chat']">
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          <ion-label>Chat</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="profile" [routerLink]="['/profile']">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+
+</ion-footer>

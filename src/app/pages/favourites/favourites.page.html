@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar class="new-background-color">
+        <ion-button color="light" fill="clear" [routerLink]="['/profile']">
+            <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+        </ion-button>
+        <ion-title class="text-color">Favourites</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid class="ion-no-padding">
+        <ion-row>
+            <ion-col size="12">
+                <ion-card class="card">
+                    <ion-card-content class="ion-text-left">
+
+                        <div class="img-wrapper">
+                            <ion-img src="../../assets/boom.jpg"></ion-img>
+                        </div>
+                        <ion-row>
+                            <ion-col>
+                                <ion-card-title class="title">Boom Box Portable</ion-card-title>
+                                <ion-card-subtitle class="sub">Rs.7500 | 25% OFF</ion-card-subtitle>
+                                <ion-card-subtitle>Member
+                                    <ion-icon name="star" class="star"></ion-icon>
+                                </ion-card-subtitle>
+                              <ion-button shape="round" fill="clear" color="dark" size="small" class="btn-1" >Find Similar <ion-icon name="arrow-forward"></ion-icon></ion-button>
+
+                            </ion-col>
+                            <ion-col size="2">
+                                <ion-row>
+                                    <ion-button color="primary" fill="clear" [routerLink]="['/product']" class="h-btn">
+                                        <ion-icon slot="icon-only" name="chevron-forward-outline"
+                                                  class="h-card-i"></ion-icon>
+                                    </ion-button>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-button color="primary" fill="clear" class="h-btn">
+                                        <ion-icon slot="icon-only" name="heart" class="h-card-i-2"></ion-icon>
+                                    </ion-button>
+                                </ion-row>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-grid>
+</ion-content>

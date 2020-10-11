@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title class="text-color">Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <h2 class="f-h2">Search Ads</h2>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary" fill="clear" [routerLink]="['/afterhome']">
+        <ion-icon slot="icon-only" name="checkmark-outline" class="f-btn"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <p class="f-p">You can easily search any ads for your<br>preference</p>
+
+
+  <div class="search">
+      <ion-searchbar class="search-bar" placeholder="Search" searchIcon="search-outline"
+                     inputmode="search"></ion-searchbar>
+  </div>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-subtitle>Popular Searches</ion-card-subtitle>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="home-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para">
+            <p>Houses</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="american-football-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para-2">
+            <p>Sport Goods</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="car-sport-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para-2">
+            <p>Cars</p>
+          </div>
+        </ion-col>
+      </ion-row>
+<div class="recent">
+      <ion-card-subtitle>Recent Searches</ion-card-subtitle>
+
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="flower-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para">
+          <p>Garden Tools</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="key-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para-2">
+          <p>Hardware</p>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-item lines="none">
+            <ion-icon name="paw-outline" slot="end" class="nim"></ion-icon>
+          </ion-item>
+          <div class="para-2">
+          <p>Pets</p>
+          </div>
+        </ion-col>
+      </ion-row>
+</div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
